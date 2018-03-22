@@ -11,20 +11,20 @@ public class Game {
         this.board = gameBoard;
     }
 
-    Player currentPlayer() {
-        return ( board.availableTileIndices().length % 2 != 0 ) ? getFirstPlayer() : getSecondPlayer();
+    void setPlayers(Player[] players) {
+        this.players = new Player[] {players[0], players[1]};
     }
 
     private Player getFirstPlayer() {
         return this.players[0];
     }
 
-    void setPlayers(Player[] players) {
-        this.players = new Player[] {players[0], players[1]};
-    }
-
     private Player getSecondPlayer() {
         return this.players[1];
+    }
+
+    Player currentPlayer() {
+        return ( board.availableTileIndices().length % 2 != 0 ) ? getFirstPlayer() : getSecondPlayer();
     }
 
     private boolean isWonBy(Player player) {

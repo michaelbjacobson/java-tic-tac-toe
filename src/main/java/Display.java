@@ -57,9 +57,10 @@ class Display {
     StringBuilder gameSetupMessage() {
         return new StringBuilder()
                 .append("\nPlease select a game mode...\n\n")
-                .append("1 - Human vs. Computer (Human goes first)\n")
-                .append("2 - Computer vs. Human (Computer goes first)\n")
-                .append("3 - Computer vs. Computer\n");
+                .append("1 - Human vs. Human\n")
+                .append("2 - Human vs. Computer (Human goes first)\n")
+                .append("3 - Computer vs. Human (Computer goes first)\n")
+                .append("4 - Computer vs. Computer\n");
     }
 
 }

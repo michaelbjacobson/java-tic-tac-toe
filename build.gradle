@@ -16,6 +16,6 @@ dependencies {
     testCompile "org.mockito:mockito-core:2.+"
 }
 
-run{
+run {
     standardInput = System.in
 }
